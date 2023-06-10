@@ -1,0 +1,31 @@
+team_id,name,abbr,full_name,location,venue_id
+29,Diamondbacks,ARI,Arizona Diamondbacks,Arizona,30
+15,Braves,ATL,Atlanta Braves,Atlanta,218
+1,Orioles,BAL,Baltimore Orioles,Baltimore,1
+2,Red Sox,BOS,Boston Red Sox,Boston,2
+16,Cubs,CHC,Chicago Cubs,Chicago,16
+4,White Sox,CHW,Chicago White Sox,Chicago,4
+17,Reds,CIN,Cincinnati Reds,Cincinnati,83
+5,Guardians,CLE,Cleveland Guardians,Cleveland,5
+27,Rockies,COL,Colorado Rockies,Colorado,27
+6,Tigers,DET,Detroit Tigers,Detroit,45
+18,Astros,HOU,Houston Astros,Houston,44
+7,Royals,KC,Kansas City Royals,Kansas City,7
+3,Angels,LAA,Los Angeles Angels,Los Angeles,3
+19,Dodgers,LAD,Los Angeles Dodgers,Los Angeles,19
+28,Marlins,MIA,Miami Marlins,Miami,4223
+8,Brewers,MIL,Milwaukee Brewers,Milwaukee,4242
+9,Twins,MIN,Minnesota Twins,Minnesota,210
+21,Mets,NYM,New York Mets,New York,209
+10,Yankees,NYY,New York Yankees,New York,208
+11,Athletics,OAK,Oakland Athletics,Oakland,3867
+22,Phillies,PHI,Philadelphia Phillies,Philadelphia,84
+23,Pirates,PIT,Pittsburgh Pirates,Pittsburgh,47
+25,Padres,SD,San Diego Padres,San Diego,85
+26,Giants,SF,San Francisco Giants,San Francisco,43
+12,Mariners,SEA,Seattle Mariners,Seattle,41
+24,Cardinals,STL,St. Louis Cardinals,St. Louis,87
+30,Rays,TB,Tampa Bay Rays,Tampa Bay,31
+13,Rangers,TEX,Texas Rangers,Texas,231
+14,Blue Jays,TOR,Toronto Blue Jays,Toronto,14
+20,Nationals,WSH,Washington Nationals,Washington,89

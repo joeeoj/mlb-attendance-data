@@ -1,0 +1,32 @@
+venue_id,name,capacity,indoor,grass,city,state,zipcode
+30,Chase Field,48359,True,True,Phoenix,Arizona,85004
+218,Truist Park,41149,False,True,Atlanta,Georgia,30339
+1,Oriole Park at Camden Yards,45971,False,True,Baltimore,Maryland,21201
+2,Fenway Park,37755,False,True,Boston,Massachusetts,02215
+16,Wrigley Field,41363,False,True,Chicago,Illinois,60613
+4,Guaranteed Rate Field,40241,False,True,Chicago,Illinois,60616
+83,Great American Ball Park,43891,False,True,Cincinnati,Ohio,45202
+5,Progressive Field,34788,False,True,Cleveland,Ohio,44115
+27,Coors Field,50144,False,True,Denver,Colorado,80205
+45,Comerica Park,41083,False,True,Detroit,Michigan,48201
+44,Minute Maid Park,41000,True,True,Houston,Texas,77002
+7,Kauffman Stadium,38427,True,True,Kansas City,Missouri,64129
+3,Angel Stadium,45517,False,True,Anaheim,California,92806
+19,Dodger Stadium,56000,False,True,Los Angeles,California,90090
+4223,loanDepot park,37446,True,False,Miami,Florida,33125
+4242,American Family Field,41700,True,True,Milwaukee,Wisconsin,53214
+210,Target Field,38544,False,True,Minneapolis,Minnesota,55403
+209,Citi Field,42136,False,False,Queens,New York,11368
+208,Yankee Stadium,47309,False,True,Bronx,New York,10451
+3867,Oakland Coliseum,46847,False,True,Oakland,California,94621
+84,Citizens Bank Park,42901,False,True,Philadelphia,Pennsylvania,19148
+47,PNC Park,38753,False,True,Pittsburgh,Pennsylvania,15212
+85,Petco Park,40222,False,True,San Diego,California,92101
+43,Oracle Park,41915,False,True,San Francisco,California,94107
+41,T-Mobile Park,47929,True,True,Seattle,Washington,98134
+87,Busch Stadium,44494,False,True,St. Louis,Missouri,63102
+31,Tropicana Field,25025,True,False,St. Petersburg,Florida,33705
+231,Globe Life Field,40000,False,False,Arlington,Texas,76011
+14,Rogers Centre,49282,True,False,Toronto,Ontario,
+89,Nationals Park,41376,False,True,Washington,District of Columbia,20003
+-1,Estadio Alfredo Harp Helú,20576,False,False,Mexico City,,

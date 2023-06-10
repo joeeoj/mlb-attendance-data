@@ -1,0 +1,32 @@
+venue_id,city,timezone
+30,Phoenix,US/Arizona
+218,Atlanta,US/Eastern
+1,Baltimore,US/Eastern
+2,Boston,US/Eastern
+16,Chicago,US/Central
+4,Chicago,US/Central
+83,Cincinnati,US/Eastern
+5,Cleveland,US/Eastern
+27,Denver,US/Mountain
+45,Detroit,US/Michigan
+44,Houston,US/Central
+7,Kansas City,US/Central
+3,Anaheim,US/Pacific
+19,Los Angeles,US/Pacific
+4223,Miami,US/Eastern
+4242,Milwaukee,US/Central
+210,Minneapolis,US/Central
+209,Queens,US/Eastern
+208,Bronx,US/Eastern
+3867,Oakland,US/Pacific
+84,Philadelphia,US/Eastern
+47,Pittsburgh,US/Eastern
+85,San Diego,US/Pacific
+43,San Francisco,US/Pacific
+41,Seattle,US/Pacific
+87,St. Louis,US/Central
+31,St. Petersburg,US/Eastern
+231,Arlington,US/Central
+14,Toronto,US/Eastern
+89,Washington,US/Eastern
+-1,Mexico City,US/Central
