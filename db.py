@@ -6,7 +6,7 @@ from config import DATA_DIR, RELOAD_DB
 
 
 DB_NAME = 'attendance.db'
-TABLES = ['teams', 'venues', 'games']
+TABLES = ['teams', 'venues', 'games', 'events']
 
 
 def load_sql_file(fname: str) -> str:

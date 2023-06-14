@@ -47,6 +47,18 @@ CREATE TABLE IF NOT EXISTS games (
     FOREIGN KEY(venue_id) REFERENCES venues(venue_id)
 );
 
+CREATE TABLE IF NOT EXISTS events (
+    id INTEGER PRIMARY KEY,
+    venue_id INTEGER NOT NULL,
+    game_id INTEGER UNIQUE,
+    game_date_local DATE,
+    event VARCHAR(500),
+
+    FOREIGN KEY(venue_id) REFERENCES venues(venue_id),
+    FOREIGN KEY(game_id) REFERENCES games(game_id)
+);
+
+
 CREATE VIEW IF NOT EXISTS attendance_ratio_daily AS
 SELECT
     g.game_dt
@@ -122,4 +134,31 @@ WHERE
     AND canceled = 0
 ORDER BY
     game_dt
+;
+
+CREATE VIEW IF NOT EXISTS events_and_scores AS
+SELECT
+    e.id
+    ,e.venue_id
+    ,v.name
+    ,g.game_dt_local
+    ,g.game_dt_dow
+    ,e.event
+    ,g.attendance
+    ,v.capacity
+    ,g.attendance / CAST(v.capacity AS FLOAT) as pct_full
+    ,g.team_abbr
+    ,g.opponent_team_abbr
+    ,g.winner
+    ,g.score
+    ,g.opponent_score
+    ,g.score - g.opponent_score as run_diff
+FROM events e
+JOIN games g
+    ON e.game_id = g.game_id
+JOIN venues v
+    ON e.venue_id = v.venue_id
+ORDER BY
+    e.venue_id
+    ,g.game_dt_local
 ;
