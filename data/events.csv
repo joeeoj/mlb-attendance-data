@@ -1,7 +1,14 @@
-venue_id,game_id,game_date_local,event
-41,401471035,2023-04-01,Julio Rodríguez Bobblehead Night
-41,401471068,2023-04-03,Bark at the Park
-41,401471217,2023-04-14,"The Clinch" Cal Raleigh Bobblehead Night
-41,401471769,2023-05-25,Bark at the Park
-41,401471783,2023-05-26,Sing-Along Fireworks Night
-3867,401472025,2023-06-13,Reverse Boycott
+venue_id,team_abbr,game_date_local,event,short_desc
+41,SEA,2023-04-01,Julio Rodríguez Bobblehead Night,Julio Bobblehead
+41,SEA,2023-04-03,Bark at the Park,
+41,SEA,2023-04-14,"The Clinch" Cal Raleigh Bobblehead Night,Cal Bobblehead
+41,SEA,2023-05-25,Bark at the Park,
+41,SEA,2023-05-26,Sing-Along Fireworks Night,Fireworks
+3867,OAK,2023-04-02,Youth Softball/Baseball Day,Youth Baseball Day
+3867,OAK,2023-04-16,1973 World Series 50th Anniversary Reunion,1973 World Series Reunion
+3867,OAK,2023-04-19,Sports Career College Fair & Education Day,Education Day
+3867,OAK,2023-04-30,Tony Kemp Poster Giveaway & Youth Softball/Baseball Day,Tony Kemp Poster
+3867,OAK,2023-05-04,Weather Education Day,
+3867,OAK,2023-05-13,Baby Groot Bobblehead,
+3867,OAK,2023-05-26,Fireworks Night,Fireworks
+3867,OAK,2023-06-13,Reverse Boycott,
