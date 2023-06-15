@@ -50,14 +50,22 @@ CREATE TABLE IF NOT EXISTS games (
 CREATE TABLE IF NOT EXISTS events (
     id INTEGER PRIMARY KEY,
     venue_id INTEGER NOT NULL,
-    game_id INTEGER UNIQUE,
+    team_abbr CHAR(3),
     game_date_local DATE,
     event VARCHAR(500),
+    short_desc VARCHAR(100),
 
     FOREIGN KEY(venue_id) REFERENCES venues(venue_id),
-    FOREIGN KEY(game_id) REFERENCES games(game_id)
+    UNIQUE(team_abbr, game_date_local, event) ON CONFLICT IGNORE
 );
 
+CREATE TABLE IF NOT EXISTS revenue (
+    id INTEGER PRIMARY KEY,
+    game_id INTEGER NOT NULL UNIQUE,
+    revenue INTEGER,
+
+    FOREIGN KEY(game_id) REFERENCES games(game_id)
+);
 
 CREATE VIEW IF NOT EXISTS attendance_ratio_daily AS
 SELECT
@@ -126,6 +134,8 @@ GROUP BY 1, 2, 3, 4
 ORDER BY 7 DESC
 ;
 
+-- seems to be single-ticketed double headers where the attendance data
+-- is only reported for the second game
 CREATE VIEW IF NOT EXISTS missing_attendance_data AS
 SELECT *
 FROM games
@@ -143,11 +153,11 @@ SELECT
     ,v.name
     ,g.game_dt_local
     ,g.game_dt_dow
-    ,e.event
+    ,COALESCE(NULLIF(e.short_desc, ''), e.event) as event
     ,g.attendance
     ,v.capacity
-    ,g.attendance / CAST(v.capacity AS FLOAT) as pct_full
-    ,g.team_abbr
+    ,g.attendance / CAST(v.capacity AS FLOAT) as attenance_pct
+    ,e.team_abbr
     ,g.opponent_team_abbr
     ,g.winner
     ,g.score
@@ -155,10 +165,21 @@ SELECT
     ,g.score - g.opponent_score as run_diff
 FROM events e
 JOIN games g
-    ON e.game_id = g.game_id
+    ON e.game_date_local = SUBSTR(g.game_dt_local, 1, 10)
+    AND e.team_abbr = g.team_abbr
 JOIN venues v
     ON e.venue_id = v.venue_id
 ORDER BY
     e.venue_id
     ,g.game_dt_local
+;
+
+CREATE VIEW IF NOT EXISTS revenue_with_attendance AS
+SELECT
+    r.*
+    ,g.attendance
+    ,r.revenue / CAST(g.attendance as FLOAT) as avg_revenue_per_seat
+FROM revenue r
+JOIN games g
+    ON r.game_id = g.game_id
 ;
