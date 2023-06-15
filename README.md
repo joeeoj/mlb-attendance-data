@@ -26,6 +26,7 @@ requests and pytz
 * additional_venues.csv - Neutral sites, not downloaded by teams_venues.py. I'm using descending negative integers as the venue_id for these.
 * timezones.csv - Timezone for each venue, used to create localized game datetime in games.csv
 * events.csv - Things like firework nights and bobblehead giveaways for later analysis
+* revenue.csv - Based on [this tweet](https://twitter.com/Athletics/status/1668792567801184261)
 
 ## data issues
 
