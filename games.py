@@ -9,6 +9,7 @@ from config import DATA_DIR
 
 
 BASE_URL = 'https://site.api.espn.com/apis/site/v2/sports/baseball/MLB/teams/{abbr}/schedule'
+GAME_OFFSET = 5 # hours
 
 
 def load_lookups() -> tuple[dict]:
@@ -69,7 +70,7 @@ def main():
             dt = datetime.fromisoformat(event['date'])
 
             # don't want future games. also add buffer for in progress games
-            if dt + timedelta(hours=3) > datetime.now(timezone.utc):
+            if dt + timedelta(hours=GAME_OFFSET) > datetime.now(timezone.utc):
                 continue
 
             d = dict()
