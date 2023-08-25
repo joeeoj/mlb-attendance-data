@@ -1,3 +1,4 @@
 venue_id,name,capacity,indoor,grass,city,state,zipcode
 -1,Estadio Alfredo Harp Helú,20576,False,False,Mexico City,,
 -2,London Stadium,66000,False,False,London,,
+-3,BB&T Ballpark at Historic Bowman Field,2366,False,True,Williamsport,PA,17701
